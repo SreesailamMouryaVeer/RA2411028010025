@@ -38,6 +38,14 @@ public class BookingRequestQueue {
         }
     }
 
+    public Reservation getNextBookingRequest() {
+        return reservationQueue.poll();
+    }
+
+    public boolean isEmpty() {
+        return reservationQueue.isEmpty();
+    }
+
     public int getQueueSize() {
         return reservationQueue.size();
     }
