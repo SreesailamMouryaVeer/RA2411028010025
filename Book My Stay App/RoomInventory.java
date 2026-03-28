@@ -1,3 +1,4 @@
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,7 +9,7 @@ import java.util.Map;
  * @author SreesailamMouryaVeer
  * @version 3.0
  */
-public class RoomInventory {
+public class RoomInventory implements Serializable {
     private Map<String, Integer> availabilityMap;
 
     public RoomInventory() {

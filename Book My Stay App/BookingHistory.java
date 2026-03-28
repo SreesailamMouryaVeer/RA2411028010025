@@ -1,3 +1,4 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +9,7 @@ import java.util.List;
  * @author SreesailamMouryaVeer
  * @version 8.0
  */
-public class BookingHistory {
+public class BookingHistory implements Serializable {
     private List<Reservation> confirmedReservations;
 
     public BookingHistory() {
